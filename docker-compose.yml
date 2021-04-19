@@ -44,6 +44,6 @@ services:
 
   sampleapps:
     image: yugabytedb/yb-sample-apps
-    command: ["--workload", "SqlInserts", "--nodes", "yb-tserver:5433", "--num_reads", "100000", "--num_writes", "100000"]
+    command: ["--workload", "SqlInserts", "--nodes", "yb-tserver:5433", "--num_reads", "10000", "--num_writes", "10000"]
     depends_on:
       - yb-tserver
