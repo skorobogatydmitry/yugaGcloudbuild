@@ -1,9 +1,5 @@
 version: '2'
 
-volumes:
-  yb-master-data-1:
-  yb-tserver-data-1:
-
 services:
   yb-master:
     image: yugabytedb/yugabyte:latest
@@ -47,3 +43,7 @@ services:
     command: ["--workload", "SqlInserts", "--nodes", "yb-tserver:5433", "--num_reads", "10000", "--num_writes", "10000"]
     depends_on:
       - yb-tserver
+
+  volumes:
+    yb-master-data-1:
+    yb-tserver-data-1:
