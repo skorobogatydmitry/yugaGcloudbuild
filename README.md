@@ -14,6 +14,9 @@ Test system (TS, scripts that needs to connect to YugaByte DB) should be include
 
 # Configuring
 
+> docker-compose.yaml is based on [this](https://docs.yugabyte.com/latest/deploy/docker/docker-compose/#create-a-docker-compose-yaml-file) official guide.
+
+
 - make docker-compose image for Cloud Build
 ``` bash
 git clone https://github.com/GoogleCloudPlatform/cloud-builders-community.git
